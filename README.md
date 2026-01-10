@@ -87,3 +87,25 @@ The repository owner(s) and contributors assume no legal or ethical liability fo
 
 ## 📄 License
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+-----------------------------------------------------------
+## 추가 내용 ##
+
+## 💡 배경에 따른 교체 지시어
+[4. Phase 2 - Step 2: Paraphrasing Process] 구절을 장르에 따라 아래 영문 문구들로 교체.
+각 지시어는 AI가 해당 장르에 맞는 **어휘 사전(Lexicon)**을 선택하도록 설계되었습니다.
+
+1. 고대 배경 (무협, 언정소설)
+  - 핵심: 고풍스러움, 우아함, 격식
+  - Paraphrase naturally to maintain an archaic/historical flavor, prioritizing the original intent and the elegant atmosphere of classical Chinese literature over literal translation.
+  - Strictly avoid modern Korean slang, loanwords, or overly localized idioms that break the immersion of the historical setting.
+
+2. 현대 배경 (현대 판타지, 로맨스, 일상물)
+  - 핵심: 자연스러운 구어체, 트렌디함, 공감도
+  - Paraphrase naturally to maintain a modern and trendy flavor, prioritizing the original intent and contemporary sensibility over literal translation.
+  - Use polished, natural Korean dialogue styles (e.g., 해요체, 해라체) and idioms that reflect current social nuances without being overly informal.
+
+3. 미래/SF 배경 (사이버펑크, 스페이스 오페라)
+  - 핵심: 세련됨, 기술적 분위기, 정교함
+  - Paraphrase naturally to maintain a futuristic and sophisticated flavor, prioritizing the original intent and technological atmosphere over literal translation.
+  - Ensure technical terms feel integrated into a sleek, advanced society’s language, using a sharp and precise narrative tone.
