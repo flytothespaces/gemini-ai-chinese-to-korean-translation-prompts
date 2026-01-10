@@ -81,34 +81,3 @@ The repository owner(s) and contributors assume no legal or ethical liability fo
 
 ## 📄 License
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
-----------------------------------------------
-
-## 📚 Public Domain & Open License Sources
-
-아래 사이트들은 저작권이 만료되었거나 자유 라이선스로 공개된 원문을 제공하는 대표적인 아카이브입니다.  
-저작권 걱정 없이 번역 연습이나 예시 자료로 활용할 수 있습니다.
-
-- [Project Gutenberg](https://www.gutenberg.org/)  
-  세계 최대의 퍼블릭 도메인 전자책 아카이브. 고전 문학과 다양한 언어 자료 제공.
-
-- [Internet Archive](https://archive.org/)  
-  책, 오디오, 영상 등 방대한 공공 자료를 무료로 열람 가능.
-
-- [HathiTrust Digital Library](https://www.hathitrust.org/)  
-  미국 대학 도서관들이 공동으로 제공하는 디지털 아카이브. 저작권 만료된 자료 다수 포함.
-
-- [Google Books – Public Domain](https://books.google.com/)  
-  저작권이 만료된 고전 서적을 무료로 다운로드할 수 있는 섹션 제공.
-
-- [국립중앙도서관 디지털컬렉션](https://www.nl.go.kr/)  
-  한국 내 저작권 만료 자료 및 고서 디지털화 제공.
-
-- [中文维基百科 (Chinese Wikipedia)](https://zh.wikipedia.org/)  
-  CC BY-SA 라이선스로 공개된 중국어 위키백과 문서. 자유롭게 번역·재사용 가능하나  
-  **저작자 표시(Attribution)**와 **동일조건변경(ShareAlike)** 의무가 있습니다.
-
-⚠️ **주의사항**  
-- 각 사이트의 라이선스 안내를 반드시 확인하세요.  
-- 일부 자료는 국가별 저작권법 차이로 보호 여부가 달라질 수 있습니다.  
-- 번역·재배포 시 출처 표기를 권장합니다.
