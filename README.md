@@ -65,7 +65,10 @@ The translation workflow mainly relies on Colomo Translator.
        - 洪吉順: 홍길순 / 길순
        ```}
 5. 일반 프롬프트 적용 설명.
-   - 콜로모 설명과 동일하지만 일반용 프롬프트를 복사하여 붙여넣고, [Vocabulary] 블럭의 단어장 내용은 이 블럭에 직접 넣어야 함.  
+   - 콜로모 설명과 동일하지만 일반용 프롬프트를 복사하여 붙여넣고, [Vocabulary] 블럭의 단어장 내용은 이 블럭에 직접 넣어야 함.
+6. DB 블럭 입력시 주의사항.
+   - 입력하는 모든 중국어는 원문 그대로 입력.
+   - Simplified Chinese, Traditional Chinese 구분 확실히 해야 보다 정확하게 인식하여 처리됨.
 
 ## ⚠️ 면책 고지 (Disclaimer)
 이 저장소는 저작권이 없는 중국어 원문을 번역하기 위한 프롬프트 자료를 제공합니다.  
