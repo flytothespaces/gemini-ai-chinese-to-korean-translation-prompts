@@ -63,14 +63,25 @@ The translation workflow mainly relies on Colomo Translator.
        ```}
 5. 일반 프롬프트 적용 설명.
    - 콜로모 설명과 동일하지만 [Vocabulary] 블럭의 단어장 내용은 이 블럭에 직접 넣어야 함.
+
 ## 🤝 Contributing  
 Contributions are welcome!  
 Feel free to open issues or submit pull requests to add more prompt examples.  
 
+## ⚠️ 면책 고지 (Disclaimer)
+이 저장소는 저작권이 없는 중국어 원문을 번역하기 위한 프롬프트 자료를 제공합니다.  
+본 프롬프트는 저작권이 없는 저작물에만 사용하도록 의도되었습니다.
+
+이 프롬프트의 잘못된 사용, 비윤리적 활용, 또는 유해한 사용으로 인해 발생하는 모든 책임은 사용자에게 있습니다.  
+저자(들)는 부적절한 사용으로 인한 결과에 대해 어떠한 법적·윤리적 책임도 지지 않습니다.
+
 ## ⚠️ Disclaimer
-This repository provides prompt resources for translation tasks.  
-Any misuse, unethical application, or harmful use of these prompts is the sole responsibility of the user.  
-The author(s) assume no liability for outcomes resulting from improper use.
+This repository provides prompt resources for translating Chinese texts that are free of copyright restrictions.  
+This prompt is intended only for copyright-free works.
+
+Any misuse, unethical application, or harmful use of these prompts is the sole
+responsibility of the user. The author(s) assume no liability for outcomes
+resulting from improper use.
 
 ## 📄 License
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
