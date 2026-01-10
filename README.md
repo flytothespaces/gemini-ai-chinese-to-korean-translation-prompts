@@ -19,6 +19,9 @@ The translation workflow mainly relies on Colomo Translator.
 3. Use with Gemini AI and Colomo Translator for translation tasks.
 4. 콜로모 적용 설명.
    - 콜로모용 프롬프트 전체를 복사하여 붙여넣기.
+   - 의역이 필요한 단어들 강제 의역 처리.
+     * [Target_Semantic_Vocab]: []
+       [] 대괄호 안에 ,로 구분하여 입력.
    - [Main Character]: 등장인물 정보 직접 입력하는 곳.
    - [Servant]: 등장인물 중 하인을 넣는 곳, 위 [Main Character] 블럭에 넣어도 무관하지만 여기에 넣어진 인물들은 기본적으로 등급이 낮게 설정됨.
    - [Main Character], [Servant] 블럭 사용법.
