@@ -13,7 +13,7 @@ The translation workflow mainly relies on Colomo Translator.
 ## 🛠 How to Use  
 1. Clone the repository:  
    `bash  
-   git clone https://github.com/USERNAME/gemini-ai-chinese-to-korean-translation-prompts.git  
+   git clone https://github.com/thinksys-JS/gemini-ai-chinese-to-korean-translation-prompts.git  
    `
 2. Review the prompt in the prompts/ folder.  
 3. Use with Gemini AI and Colomo Translator for translation tasks.  
