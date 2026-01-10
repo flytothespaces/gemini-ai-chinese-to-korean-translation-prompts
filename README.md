@@ -62,7 +62,7 @@ The translation workflow mainly relies on Colomo Translator.
        - 洪吉順: 홍길순 / 길순
        ```}
 5. 일반 프롬프트 적용 설명.
-   - 콜로모 설명과 동일하지만 [Vocabulary] 블럭의 단어장 내용은 이 블럭에 직접 넣어야 함.
+   - 콜로모 설명과 동일하지만 일반용 프롬프트를 복사하여 붙여넣고, [Vocabulary] 블럭의 단어장 내용은 이 블럭에 직접 넣어야 함.
 
 ## 🤝 Contributing  
 Contributions are welcome!  
