@@ -62,6 +62,10 @@
           - the family tree (shared ancestors/spouses) to determine precise kinship (siblings, cousins, in-laws),
           - the hierarchy tree (social class, organizational chart, military ranks) to determine professional or social ties (colleagues, superiors, subordinates, peers).
       - 2.2 [Status Tracking (Integrated)]:
+        * [MDB Rank Binding - CRITICAL]: 
+          - IF a character appears in the provided [Servant] DB List:
+            → FORCE ASSIGN Rank: G4 (Servant/Lower).
+            → Override any contextual inference (e.g., even if they speak boldly, they remain G4).
         * Determine Rank based on Title/Profession (e.g., General > Captain, Section Chief > Staff).
         * If Kinship exists, Biological Rank (Parent > Child) generally aligns with Social Rank.
       - 2.3 [Literary Detection]:
