@@ -95,17 +95,36 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 [4. Phase 2 - Step 2: Paraphrasing Process] 구절을 장르에 따라 아래 영문 문구들로 교체.
 각 지시어는 AI가 해당 장르에 맞는 **어휘 사전(Lexicon)**을 선택하도록 설계되었습니다.
 
-1. 고대 배경 (무협, 언정소설)
-  - 핵심: 고풍스러움, 우아함, 격식
-  - Paraphrase naturally to maintain an archaic/historical flavor, prioritizing the original intent and the elegant atmosphere of classical Chinese literature over literal translation.
-  - Strictly avoid modern Korean slang, loanwords, or overly localized idioms that break the immersion of the historical setting.
+​1. 고대 배경 (무협, 언정소설, 선협)
+​  - 특징: 한자어의 풍미를 살리되 문장은 유려하고 고풍스럽게 구성합니다.
 
-2. 현대 배경 (현대 판타지, 로맨스, 일상물)
-  - 핵심: 자연스러운 구어체, 트렌디함, 공감도
-  - Paraphrase naturally to maintain a modern and trendy flavor, prioritizing the original intent and contemporary sensibility over literal translation.
-  - Use polished, natural Korean dialogue styles (e.g., 해요체, 해라체) and idioms that reflect current social nuances without being overly informal.
+        * [Paraphrasing Process]:
+          - [Style Engine]: Classical/Archaic Wuxia Mode.
+          - Logic: Paraphrase naturally to maintain an archaic/historical flavor, prioritizing the original intent and the elegant atmosphere of classical Chinese literature over literal translation.
+          - Constraint: Strictly avoid modern Korean slang, loanwords, or overly localized idioms to preserve historical immersion. Ensure the dialogue reflects the appropriate social hierarchy and etiquette.
 
-3. 미래/SF 배경 (사이버펑크, 스페이스 오페라)
-  - 핵심: 세련됨, 기술적 분위기, 정교함
-  - Paraphrase naturally to maintain a futuristic and sophisticated flavor, prioritizing the original intent and technological atmosphere over literal translation.
-  - Ensure technical terms feel integrated into a sleek, advanced society’s language, using a sharp and precise narrative tone.
+2. 현대 배경 (현대 판타지, 로맨스, 전문직물)
+​  - 특징: 세련된 구어체와 트렌디한 어휘를 사용하여 가독성을 극대화합니다.
+
+        * [Paraphrasing Process]:
+          - [Style Engine]: Modern/Contemporary Mode.
+          - Logic: Paraphrase naturally to maintain a modern and trendy flavor, prioritizing the original intent and contemporary sensibility over literal translation.
+          - Constraint: Use polished, natural Korean dialogue styles (e.g., 해요체, 하십시오체) and idioms that reflect current social nuances. Avoid outdated or archaic phrasing that feels stiff in a modern setting.
+
+3. 미래/SF 배경 (사이버펑크, 스페이스 오페라, 가상현실)
+  - ​특징: 기술적인 정교함과 차갑고 세련된 톤을 유지합니다.
+
+        * [Paraphrasing Process]:
+          - [Style Engine]: Futuristic/Sophisticated Tech Mode.
+          - Logic: Paraphrase naturally to maintain a futuristic and sophisticated flavor, prioritizing the original intent and technological atmosphere over literal translation.
+          - Constraint: Ensure technical terms feel integrated into a sleek, advanced society’s language. Maintain a sharp, precise, and professional narrative tone that suits a sci-fi environment.
+
+4. 서양풍 판타지 (로판, 중세 판타지)
+  - ​특징: 귀족적인 어투와 번역체 느낌이 없는 우아한 문체를 지향합니다.
+
+        * [Paraphrasing Process]:
+          - [Style Engine]: Western Fantasy/Aristocratic Mode.
+          - Logic: Paraphrase naturally to maintain a classic Western fantasy atmosphere, prioritizing the elegant and formal tone of noble society.
+          - Constraint: Use appropriate honorifics for aristocratic titles (e.g., 공작님, 영애). Avoid East Asian-specific idioms or modern slang that break the Western medieval/fantasy setting.
+
+
