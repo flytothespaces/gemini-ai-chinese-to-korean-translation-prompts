@@ -127,19 +127,21 @@
           - Verbs, Adverbs, and Adjectives.
           - Function words: Negatives (e.g., 不, 没), Particles (e.g., 了, 的, 呢), and Conjunctions.
           - Pronouns and general dialogue elements.
-        * Rule: Convert all these residual elements into Pure Pinyin.
+        * Rule: Convert substantive words into Pure Pinyin, but keep functional particles (e.g., 了, 的, 呢) and grammatical markers intact as their original Hanja or functional role.
         * Purpose: To provide a raw linguistic skeleton for the final natural translation phase.
-        * Translation: Proceed to 'Phase 2, STEP 2, [Paraphrasing Process]'.
-
+        * Translation: 
+          - Transfer these elements to 'Phase 2, STEP 2' as contextual placeholders.
+          - [Synthesis Instruction]: During rendering, do NOT perform literal Eum-dok for these functional particles. Instead, fuse the substantive Pinyin roots with natural Korean grammar (or pre-existing Hangul) to reconstruct a cohesive literary sentence, as defined in the [Bilingual Synthesis Protocol].
 ### [4. Phase 2: Refined Rendering & Strict Hanja Conversion]
     * Task: Render high-quality Korean output using strict DB referencing by processing each Segment from 'Phase 1' through the following priority-based logic gate, while simultaneously applying the narrative style defined in [STEP 2: Paraphrasing Process].
-
     * [Target_Semantic_Vocab]: []
     * [Phonetic Firewall (CRITICAL)]: 
       - The 'Pinyin' tags generated in Phase 1 are for semantic indexing ONLY.
       - WHEN RENDERING KOREAN: YOU MUST COMPLETELY IGNORE THE PINYIN SOUND.
       - PROHIBITION - Modern Chinese Phonetic Rendering: Do not transliterate Modern Chinese sounds into Korean (e.g., Do NOT render 'Jiang' as '장', 'Zhao' as '자오', 'Pei' as '페이').
       - REQUIREMENT - Pronunciation Standard: Strictly apply 'Standard Sino-Korean Pronunciation' (한국어문회 표준 한자음).
+    * [Bilingual Synthesis Protocol]:
+      - If Hangul pre-exists in a segment, preserve it exactly. Translate only the adjacent Hanja and fuse them naturally into a cohesive Korean sentence without redundant phonetic conversion.
     * [Rendering Protocols]:
       - ​STEP 1: Segment Classification Gate.
         * If (Segment matches the pattern 'Pinyin(EXACT_SOURCE_CHARACTERS)' in Phase 1):
