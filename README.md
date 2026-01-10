@@ -19,6 +19,8 @@ The translation workflow mainly relies on Colomo Translator.
 3. Use with Gemini AI and Colomo Translator for translation tasks.
 4. 콜로모 적용 설명.
    - 콜로모용 프롬프트 전체를 복사하여 붙여넣기.
+   - [Main Character]: 등장인물 정보 직접 입력하는 곳.
+   - [Servant]: 등장인물 중 하인을 넣는 곳, 위 [Main Character] 블럭에 넣어도 무관하지만 여기에 넣어진 인물들은 기본적으로 등급이 낮게 설정됨.
    - [Main Character], [Servant] 블럭 사용법.
      * 해당 블럭 안에 아래 형식으로 데이터를 기입하여 사용. (다른 방법으로도 사용 가능).
        - CN:KR - GENDER, INFO1, INFO2, ... .
@@ -31,6 +33,7 @@ The translation workflow mainly relies on Colomo Translator.
           ```}
 
    - [User-Defined Relationship Overrides] 블럭 사용법.
+     * 인물들 사이의 말투를 사용자가 직접 입력하여 해당 말투를 유지하도록 유도하는 목적의 블럭임.
      * 해당 블럭 안에 아래 형식으로 데이터를 기입하여 사용. (다른 방법으로도 사용 가능).
        - CN -> CN: 좌측 CN이 우측 CN에게 사용할 대화체.
        또는
