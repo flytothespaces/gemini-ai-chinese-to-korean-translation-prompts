@@ -216,7 +216,7 @@
 
 [Vocabulary]
 {```
-{{note}}
+
 ```}
 
 [Main Character]
