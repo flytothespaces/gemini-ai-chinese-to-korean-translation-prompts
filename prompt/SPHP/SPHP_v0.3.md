@@ -254,3 +254,5 @@
 
 ```}
 
+From now on, only Chinese source texts will be provided.  
+Continue translating them as instructed above.
