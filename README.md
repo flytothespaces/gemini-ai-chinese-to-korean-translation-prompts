@@ -105,6 +105,11 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
           - [Style Engine]: Classical/Archaic Wuxia Mode.
           - Logic: Paraphrase naturally to maintain an archaic/historical flavor, prioritizing the original intent and the elegant atmosphere of classical Chinese literature over literal translation.
           - Constraint: Strictly avoid modern Korean slang, loanwords, or overly localized idioms to preserve historical immersion. Ensure the dialogue reflects the appropriate social hierarchy and etiquette.
+          ​- [Tone & Nuance Adaptation]:
+​            * Focus: Classical elegance that bridges martial power and imperial grace. 
+            * ​Primary Tone: Stoic, Elegant, and Rhythmic.
+            * ​Nuance: Emphasize the poetic beauty of classical vocabulary. Maintain a disciplined, archaic flow that reflects traditional etiquette. Sentences should be fluid yet restrained, prioritizing metaphorical depth over literal emotional outbursts.
+            * ​Hostile Nuance: Use 'Archaic Dignity & Sharp Coldness'. Express hostility through high-handed manners and elegant but lethal vocabulary. For palace strife, use indirect, sophisticated insults; for martial conflicts, use cold disdain for the opponent’s status or ability.
 
 2. 현대 배경 (현대 판타지, 로맨스, 전문직물)
 ​  - 특징: 세련된 구어체와 트렌디한 어휘를 사용하여 가독성을 극대화합니다.
@@ -113,6 +118,11 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
           - [Style Engine]: Modern/Contemporary Mode.
           - Logic: Paraphrase naturally to maintain a modern and trendy flavor, prioritizing the original intent and contemporary sensibility over literal translation.
           - Constraint: Use polished, natural Korean dialogue styles (e.g., 해요체, 하십시오체) and idioms that reflect current social nuances. Avoid outdated or archaic phrasing that feels stiff in a modern setting.
+          ​- [Tone & Nuance Adaptation]:
+            * Focus: Vivid, trendy, and high-readability conversational style.
+            * ​Primary Tone: Natural, Conversational, and Expressive.
+            * ​Nuance: Fully adopt the rhythm of contemporary Korean speech. Focus on polished, trendy, and relatable dialogue styles. Ensure sentences are concise and impactful, reflecting modern social dynamics and emotional honesty.
+            * ​Hostile Nuance: Use 'Sharp & Provocative Bluntness'. Utilize contemporary sarcasm and cold, cynical tones that target the opponent’s pride. Prioritize the raw, realistic tension found in modern noir or intense drama confrontations.
 
 3. 미래/SF 배경 (사이버펑크, 스페이스 오페라, 가상현실)
   - ​특징: 기술적인 정교함과 차갑고 세련된 톤을 유지합니다.
@@ -121,6 +131,12 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
           - [Style Engine]: Futuristic/Sophisticated Tech Mode.
           - Logic: Paraphrase naturally to maintain a futuristic and sophisticated flavor, prioritizing the original intent and technological atmosphere over literal translation.
           - Constraint: Ensure technical terms feel integrated into a sleek, advanced society’s language. Maintain a sharp, precise, and professional narrative tone that suits a sci-fi environment.
+​          ​- [Tone & Nuance Adaptation]:
+            * Focus: Dry, analytical, and technologically sophisticated.
+            * ​Primary Tone: Sharp, Precise, and Technocratic.
+            * ​Nuance: Maintain a cool, rational atmosphere by minimizing emotional modifiers. Integrate technical jargon naturally into the prose to reflect an advanced society. Use punchy, noun-heavy sentence structures for a sleek, professional feel.
+            * ​Hostile Nuance: Use 'Clinical Contempt'. Treat the opponent like a malfunctioning system or an obsolete relic. Express hostility through arrogant efficiency or robotic dismissiveness (e.g., treating human conflict as a mere calculation error).
+
 
 4. 서양풍 판타지 (로판, 중세 판타지)
   - ​특징: 귀족적인 어투와 번역체 느낌이 없는 우아한 문체를 지향합니다.
@@ -129,5 +145,15 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
           - [Style Engine]: Western Fantasy/Aristocratic Mode.
           - Logic: Paraphrase naturally to maintain a classic Western fantasy atmosphere, prioritizing the elegant and formal tone of noble society.
           - Constraint: Use appropriate honorifics for aristocratic titles (e.g., 공작님, 영애). Avoid East Asian-specific idioms or modern slang that break the Western medieval/fantasy setting.
+          ​- [Tone & Nuance Adaptation]:
+            * Focus: Aristocratic grace and polished Western-style etiquette.
+            * ​Primary Tone: Noble, Graceful, and Polished.
+            * ​Nuance: Reflect the sophisticated social codes of Western aristocracy. Avoid 'Translationese' by using elegant, high-class Korean phrasing. Maintain an air of dignity even in casual dialogue, ensuring that every word reflects the character's status and education.
+            * ​Hostile Nuance: Use 'Elegant Venom & Fantasy Elitism'. Insults should be sophisticated and reflect a sense of racial or bloodline superiority. Maintain a high-class vocabulary while delivering lethal, contemptuous strikes against the opponent's 'lowly' status or lack of power.
 
+
+
+
+
+    
 
