@@ -156,7 +156,29 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 ## HTBC PROMPT
   - 용도별 프롬프트를 붙여놓고 CONFIG_SETTING의 [] 안에 아래 예제의 장르를 입력하고 사용.
 
+  - 태그 블럭:
+    <MALE>
+    여기에 남성 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
+    </MALE>
 
+    <FEMALE>
+    여기에 여성 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
+    </FEMALE>
 
+    <MASTER>
+    여기에 <SERVANT> 태그 인물들에게 주인 대우를 받는 인물 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
+    </MASTER>
+
+    <SERVANT>
+    여기에 노비(하인, 시녀 등)의 인물 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
+    </SERVANT>
+
+    여기는 콜로모의 번역노트 공간에 단어장 겸 인물 이름 치환 용도로 사용.
+    CN:KR 형태로 줄바꿈으로 입력.
+    <GLOSSARY>
+    {{note}}
+    </GLOSSARY>
+
+    만약 번역노트 공간을 다른 용도로 사용하고 있다면 {{note}}를 삭제하고 이 부분에 직접 입력.
     
 
