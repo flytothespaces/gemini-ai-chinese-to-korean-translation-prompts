@@ -95,13 +95,14 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
    - Simplified Chinese, Traditional Chinese 구분 확실히 해야 보다 정확하게 인식하여 처리됨.
 
 ## 추가 내용 ##
+아래 교체 지시어는 v0.3에 반영되지 않음.
 
 ## 💡 배경에 따른 교체 지시어
 [4. Phase 2 - Step 2: Paraphrasing Process] 구절을 장르에 따라 아래 영문 문구들로 교체.
 각 지시어는 AI가 해당 장르에 맞는 **어휘 사전(Lexicon)**을 선택하도록 설계되었습니다.
 
 ​1. 고대 배경 (무협, 언정소설, 선협)
-​  - 특징: 한자어의 풍미를 살리되 문장은 유려하고 고풍스럽게 구성합니다.
+​  * 특징: 한자어의 풍미를 살리되 문장은 유려하고 고풍스럽게 구성합니다.
 
         * [Paraphrasing Process]:
           - [Style Engine]: Classical/Archaic Wuxia Mode.
@@ -114,7 +115,7 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
             * ​Hostile Nuance: Use 'Archaic Dignity & Sharp Coldness'. Express hostility through high-handed manners and elegant but lethal vocabulary. For palace strife, use indirect, sophisticated insults; for martial conflicts, use cold disdain for the opponent’s status or ability.
 
 2. 현대 배경 (현대 판타지, 로맨스, 전문직물)
-​  - 특징: 세련된 구어체와 트렌디한 어휘를 사용하여 가독성을 극대화합니다.
+​  * 특징: 세련된 구어체와 트렌디한 어휘를 사용하여 가독성을 극대화합니다.
 
         * [Paraphrasing Process]:
           - [Style Engine]: Modern/Contemporary Mode.
@@ -127,7 +128,7 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
             * ​Hostile Nuance: Use 'Sharp & Provocative Bluntness'. Utilize contemporary sarcasm and cold, cynical tones that target the opponent’s pride. Prioritize the raw, realistic tension found in modern noir or intense drama confrontations.
 
 3. 미래/SF 배경 (사이버펑크, 스페이스 오페라, 가상현실)
-  - ​특징: 기술적인 정교함과 차갑고 세련된 톤을 유지합니다.
+  * ​특징: 기술적인 정교함과 차갑고 세련된 톤을 유지합니다.
 
         * [Paraphrasing Process]:
           - [Style Engine]: Futuristic/Sophisticated Tech Mode.
@@ -141,7 +142,7 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 
 
 4. 서양풍 판타지 (로판, 중세 판타지)
-  - ​특징: 귀족적인 어투와 번역체 느낌이 없는 우아한 문체를 지향합니다.
+  * ​특징: 귀족적인 어투와 번역체 느낌이 없는 우아한 문체를 지향합니다.
 
         * [Paraphrasing Process]:
           - [Style Engine]: Western Fantasy/Aristocratic Mode.
