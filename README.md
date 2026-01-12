@@ -151,7 +151,8 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
             * ​Nuance: Reflect the sophisticated social codes of Western aristocracy. Avoid 'Translationese' by using elegant, high-class Korean phrasing. Maintain an air of dignity even in casual dialogue, ensuring that every word reflects the character's status and education.
             * ​Hostile Nuance: Use 'Elegant Venom & Fantasy Elitism'. Insults should be sophisticated and reflect a sense of racial or bloodline superiority. Maintain a high-class vocabulary while delivering lethal, contemptuous strikes against the opponent's 'lowly' status or lack of power.
 
-
+## HTBC PROMPT
+  - 용도별 프롬프트를 붙여놓고 CONFIG_SETTING의 [] 안에 아래 예제의 장르를 입력하고 사용.
 
 
 
