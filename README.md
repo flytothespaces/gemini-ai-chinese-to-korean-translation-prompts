@@ -157,7 +157,7 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
 ## HTBC PROMPT
   1. 용도별 프롬프트를 붙여놓고 CONFIG_SETTING의 [] 안에 아래 예제의 장르를 입력하고 사용.
 
-  2. 태그 블럭:
+  2. 태그 블럭.
     <MALE>
     여기에 남성 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
     </MALE>
