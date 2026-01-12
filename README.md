@@ -17,7 +17,28 @@ The translation workflow mainly relies on Colomo Translator.
    `
 2. Review the prompt in the prompts/ folder.  
 3. Use with Gemini AI and Colomo Translator for translation tasks.
-4. 콜로모 적용 설명.
+
+## ⚠️ 면책 고지 (Disclaimer)
+이 저장소는 저작권이 없는 중국어 원문을 번역하기 위한 프롬프트 자료를 제공합니다.  
+본 프롬프트는 저작권이 없는 저작물에만 사용하도록 의도되었으며,  
+저작권이 있는 저작물에 사용하는 것은 금지됩니다.  
+
+이 프롬프트의 잘못된 사용, 비윤리적 활용, 저작권 침해, 또는 유해한 사용으로 인해 발생하는 모든 책임은 사용자에게 있습니다.  
+저장소 소유자 및 기여자는 부적절하거나 불법적인 사용으로 인한 결과에 대해 어떠한 법적·윤리적 책임도 지지 않습니다.  
+
+## ⚠️ Disclaimer
+This repository provides prompt resources for translating Chinese texts that are free of copyright restrictions.  
+These prompts are intended only for copyright-free works and must **not** be used with copyrighted materials.  
+
+Any misuse, unethical application, copyright infringement, or harmful use of these prompts is the sole responsibility of the user.  
+The repository owner(s) and contributors assume no legal or ethical liability for any outcomes resulting from improper or unlawful use.
+
+## 📄 License
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+-----------------------------------------------------------
+## HPSP PROMPT
+1. 콜로모 적용 설명.
    - 콜로모용 프롬프트 전체를 복사하여 붙여넣기.
    - 의역이 필요한 단어들 강제 의역 처리.
      * [Target_Semantic_Vocab]: []
@@ -67,31 +88,12 @@ The translation workflow mainly relies on Colomo Translator.
        - 洪吉童: 홍길동
        - 洪吉順: 홍길순 / 길순
        ```}
-5. 일반 프롬프트 적용 설명.
+2. 일반 프롬프트 적용 설명.
    - 콜로모 설명과 동일하지만 일반용 프롬프트를 복사하여 붙여넣고, [Vocabulary] 블럭의 단어장 내용은 이 블럭에 직접 넣어야 함.
 6. DB 블럭 입력시 주의사항.
    - 입력하는 모든 중국어는 원문 그대로 입력.
    - Simplified Chinese, Traditional Chinese 구분 확실히 해야 보다 정확하게 인식하여 처리됨.
 
-## ⚠️ 면책 고지 (Disclaimer)
-이 저장소는 저작권이 없는 중국어 원문을 번역하기 위한 프롬프트 자료를 제공합니다.  
-본 프롬프트는 저작권이 없는 저작물에만 사용하도록 의도되었으며,  
-저작권이 있는 저작물에 사용하는 것은 금지됩니다.  
-
-이 프롬프트의 잘못된 사용, 비윤리적 활용, 저작권 침해, 또는 유해한 사용으로 인해 발생하는 모든 책임은 사용자에게 있습니다.  
-저장소 소유자 및 기여자는 부적절하거나 불법적인 사용으로 인한 결과에 대해 어떠한 법적·윤리적 책임도 지지 않습니다.  
-
-## ⚠️ Disclaimer
-This repository provides prompt resources for translating Chinese texts that are free of copyright restrictions.  
-These prompts are intended only for copyright-free works and must **not** be used with copyrighted materials.  
-
-Any misuse, unethical application, copyright infringement, or harmful use of these prompts is the sole responsibility of the user.  
-The repository owner(s) and contributors assume no legal or ethical liability for any outcomes resulting from improper or unlawful use.
-
-## 📄 License
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
------------------------------------------------------------
 ## 추가 내용 ##
 
 ## 💡 배경에 따른 교체 지시어
