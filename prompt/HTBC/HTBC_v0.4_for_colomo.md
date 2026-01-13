@@ -19,7 +19,13 @@
     - Do not Localize/Paraphrase/Guess.
 - [ENTITY_KERNEL]
   * Scope: Proper nouns, names, titles, terms of address.
-  * Pipeline:
+  * MANDATORY_RENDER: Every processed entity MUST be rendered via the [OUTPUT_FORMAT] below. No exceptions.
+  * [OUTPUT_FORMAT]:
+    - SC_KEY: Simplified Chinese of TARGET_TOKENS.
+    - STD: KR_RESULT(SC_KEY).
+    - Expanded: If Len(SC_KEY) ≥ 4 & Type != Person_Name, ➔ KR_RESULT(SC_KEY:Brief_Meaning).
+    - PRONOUN_EXCLUSION: For pronouns (你, 我, 他 etc.), emit KR_RESULT only (No SC_KEY).
+  * Pipeline Steps:
     Step 1. DB_ROUTE: 
       * If format is CN:KR ➔ Step 2. 
       * Otherwise ➔ Step 4.
@@ -32,11 +38,6 @@
       * IF KR_RESULT exists ➔ Step 5. ELSE ➔ Step 4.
     Step 4. PRONOUN_CONVERSION:
       * Map TARGET_TOKENS via [PRONOUNS_KR] Conversion (1:1) ➔ KR_RESULT.
-    Step 5. FORMATTER:
-      * SC_KEY: Simplified Chinese of TARGET_TOKENS.
-      * STD: KR_RESULT(SC_KEY).
-      * Expanded: If Len(SC_KEY) ≥ 4 & Type != Person_Name, ➔ KR_RESULT(SC_KEY:Brief_Meaning).
-      * PRONOUN_EXCLUSION: For pronouns (你, 我, 他 etc.), emit KR_RESULT only (No SC_KEY).
 - [GRAMMAR_LOGIC]:
   * PARTICLE: Attach to ${KR} coda. Ignore (${CN}). Re-read for harmony.
   * NEGATION: Lock polarity (不/没). No double-negatives. 
