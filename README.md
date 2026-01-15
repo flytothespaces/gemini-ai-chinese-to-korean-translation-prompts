@@ -160,26 +160,36 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
   2. 태그 블럭.
     <MALE>
     여기에 남성 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
+    또는, CN:KR, CN:KR, ... 형태로 입력.
     </MALE>
 
     <FEMALE>
     여기에 여성 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
+    또는, CN:KR, CN:KR, ... 형태로 입력.
     </FEMALE>
 
     <MASTER>
     여기에 <SERVANT> 태그 인물들에게 주인 대우를 받는 인물 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
+    또는, CN:KR, CN:KR, ... 형태로 입력.
     </MASTER>
 
     <SERVANT>
     여기에 노비(하인, 시녀 등)의 인물 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
+    또는, CN:KR, CN:KR, ... 형태로 입력.
     </SERVANT>
-
-    여기는 콜로모의 번역노트 공간에 단어장 겸 인물 이름 치환 용도로 사용.
-    CN:KR 형태로 줄바꿈으로 입력.
+    
     <GLOSSARY>
     {{note}}
+    여기는 콜로모의 번역노트 공간에 단어장 겸 인물 이름 치환 용도로 사용.
+    CN:KR or CN:KR1 / KR2 / KR3 ... 형태로 줄바꿈 입력.
+    만약 번역노트 공간을 다른 용도로 사용하고 있다면 {{note}}를 삭제하고 이 부분에 직접 입력.
     </GLOSSARY>
 
-    만약 번역노트 공간을 다른 용도로 사용하고 있다면 {{note}}를 삭제하고 이 부분에 직접 입력.
+    <CN_MEANS>
+    여기는 의미 번역이 되었으면 하는 중국어를 콤마(,)로 구분하여 입력.
+    CN, CN, CN, ... 
+    </CN_MEANS>
+
+
     
 
