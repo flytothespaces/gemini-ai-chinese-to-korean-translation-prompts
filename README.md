@@ -37,7 +37,7 @@ The repository owner(s) and contributors assume no legal or ethical liability fo
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 -----------------------------------------------------------
-## SPHP PROMPT
+## SPHP PROMPT (중단)
 1. 콜로모 적용 설명.
    - 콜로모용 프롬프트 전체를 복사하여 붙여넣기.
    - 의역이 필요한 단어들 강제 의역 처리.
