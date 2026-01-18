@@ -37,6 +37,77 @@ The repository owner(s) and contributors assume no legal or ethical liability fo
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 -----------------------------------------------------------
+## HTBC PROMPT 
+  - v1.0 이후 변경.
+  1. SPEECH_FIX로 통합관리
+    e.g.,Marker ( ➡ , ⇄ ), Tone [lowest (Rude) / low (lowering tone without insult) / semi-low (Semi-informal) / equal (Plain) / semi-high (Semi-polite) / high (Polite) / highest (Deferential) / informal (Informal) hierarchical speech level],
+    "CN:KR:GENDER, ... [➡/⇄] CN:KR:GENDER, ... = Tone.".
+
+  2. 범례
+    CN: 중국이름 (원문 중국어 필수)
+    KR: 번역할 이름
+    성별: M/F
+    마커:
+       ➡ : 왼쪽이 화자, 오른쪽은 청자
+       ⇄ : 좌우 동일 관계
+       ? : 화자/청자 미식별
+       = : 인물 관계와 대화 TONE 구분
+     TONE: 말투 설정. [lowest (Rude) / low (lowering tone without insult) / semi-low (Semi-informal) / equal (Plain) / semi-high (Semi-polite) / high (Polite) / highest (Deferential) / informal (Informal) hierarchical speech level].
+       TONE 뒤에 ()로 대화체 지정 가능. 이렇게 지정하면 지정한 대화체 사용 유도.
+     
+  4. 입력예시
+     a. 독백: CN:KR:M = POLITE (-해라체).  
+     b. 화자/청자 미확인: CN:KR:M =? PLAIN.
+       미확인시 기본 설정된 말투 적용.
+     c. 화자(들)가 청자(들)에게: CN1:KR1:M, CN2:KR2:F ➡ CN3:KR3:M, CN4:KR4:F = semi-informal. 
+       CN1, CN2 인물은 CN3, CN4 에게 SEMI-LOW(반하대) 말투를 적용.
+     d. 화자(들)/청자(들) 동등: CN1:KR1:M, CN2:KR2:F ⇄ CN3:KR3:M, CN4:KR4:F = semi-informal. 
+       좌우 상호간에 SEMI-LOW(반하대) 말투를 적용.
+
+
+
+
+  - v1.0 이전
+  1. 용도별 프롬프트를 붙여놓고 CONFIG_SETTING의 [] 안에 아래 예제의 장르를 입력하고 사용.
+
+  2. 태그 블럭.
+    <MALE>
+    여기에 남성 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
+    또는, CN:KR, CN:KR, ... 형태로 입력.
+    </MALE>
+
+    <FEMALE>
+    여기에 여성 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
+    또는, CN:KR, CN:KR, ... 형태로 입력.
+    </FEMALE>
+
+    <MASTER>
+    여기에 <SERVANT> 태그 인물들에게 주인 대우를 받는 인물 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
+    또는, CN:KR, CN:KR, ... 형태로 입력.
+    </MASTER>
+
+    <SERVANT>
+    여기에 노비(하인, 시녀 등)의 인물 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
+    또는, CN:KR, CN:KR, ... 형태로 입력.
+    </SERVANT>
+    
+    <GLOSSARY>
+    {{note}}
+    여기는 콜로모의 번역노트 공간에 단어장 겸 인물 이름 치환 용도로 사용.
+    CN:KR or CN:KR1 / KR2 / KR3 ... 형태로 줄바꿈 입력.
+    만약 번역노트 공간을 다른 용도로 사용하고 있다면 {{note}}를 삭제하고 이 부분에 직접 입력.
+    </GLOSSARY>
+
+    <CN_MEANS>
+    여기는 의미 번역이 되었으면 하는 중국어를 콤마(,)로 구분하여 입력.
+    CN, CN, CN, ... 
+    </CN_MEANS>
+
+
+
+
+
+
 ## SPHP PROMPT (중단)
 1. 콜로모 적용 설명.
    - 콜로모용 프롬프트 전체를 복사하여 붙여넣기.
@@ -153,42 +224,6 @@ This project is licensed under the MIT License – see the [LICENSE](LICENSE) fi
             * ​Primary Tone: Noble, Graceful, and Polished.
             * ​Nuance: Reflect the sophisticated social codes of Western aristocracy. Avoid 'Translationese' by using elegant, high-class Korean phrasing. Maintain an air of dignity even in casual dialogue, ensuring that every word reflects the character's status and education.
             * ​Hostile Nuance: Use 'Elegant Venom & Fantasy Elitism'. Insults should be sophisticated and reflect a sense of racial or bloodline superiority. Maintain a high-class vocabulary while delivering lethal, contemptuous strikes against the opponent's 'lowly' status or lack of power.
-
-## HTBC PROMPT
-  1. 용도별 프롬프트를 붙여놓고 CONFIG_SETTING의 [] 안에 아래 예제의 장르를 입력하고 사용.
-
-  2. 태그 블럭.
-    <MALE>
-    여기에 남성 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
-    또는, CN:KR, CN:KR, ... 형태로 입력.
-    </MALE>
-
-    <FEMALE>
-    여기에 여성 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
-    또는, CN:KR, CN:KR, ... 형태로 입력.
-    </FEMALE>
-
-    <MASTER>
-    여기에 <SERVANT> 태그 인물들에게 주인 대우를 받는 인물 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
-    또는, CN:KR, CN:KR, ... 형태로 입력.
-    </MASTER>
-
-    <SERVANT>
-    여기에 노비(하인, 시녀 등)의 인물 이름(CN 또는 KR)을 콤마(,)로 구분하여 입력.
-    또는, CN:KR, CN:KR, ... 형태로 입력.
-    </SERVANT>
-    
-    <GLOSSARY>
-    {{note}}
-    여기는 콜로모의 번역노트 공간에 단어장 겸 인물 이름 치환 용도로 사용.
-    CN:KR or CN:KR1 / KR2 / KR3 ... 형태로 줄바꿈 입력.
-    만약 번역노트 공간을 다른 용도로 사용하고 있다면 {{note}}를 삭제하고 이 부분에 직접 입력.
-    </GLOSSARY>
-
-    <CN_MEANS>
-    여기는 의미 번역이 되었으면 하는 중국어를 콤마(,)로 구분하여 입력.
-    CN, CN, CN, ... 
-    </CN_MEANS>
 
 
     
