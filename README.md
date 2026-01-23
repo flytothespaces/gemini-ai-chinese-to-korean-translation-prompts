@@ -37,6 +37,11 @@ The repository owner(s) and contributors assume no legal or ethical liability fo
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 -----------------------------------------------------------
+## RDRC PROMPT 작업중
+
+
+
+
 ## HTBC PROMPT 
   - v1.0 이후 변경.
   1. SPEECH_FIX로 통합관리
