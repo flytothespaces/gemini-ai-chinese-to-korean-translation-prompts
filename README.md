@@ -1,3 +1,7 @@
+## New
+  - RDRP XML VERSION
+
+
 # Gemini AI Chinese-to-Korean Translation Prompts  
 
 ## 📌 Overview  
