@@ -1,6 +1,10 @@
 ## New
+  - RDRP XML V0.2 FOR COLOMO
+    ## Attribution
+    Certain parts of the AXIOM directives (specifically the INPUT, OUTPUT, and SECTION rules) were adapted by translating the original Kolomo prompt into English for use in this project.  
+All other content is original and released under the MIT License.
+    
   - RDRP XML VERSION
-
 
 # Gemini AI Chinese-to-Korean Translation Prompts  
 
