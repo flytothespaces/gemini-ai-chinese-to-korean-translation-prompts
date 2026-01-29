@@ -1,4 +1,6 @@
 ## New
+  - RDRP XML V0.4 FOR COLOMO
+    CHUNK 기능 추가, 순서 재배치 
   - RDRP XML V0.3 FOR COLOMO
     GLOSSARY 치환문제 수정
   - RDRP XML V0.2 FOR COLOMO
