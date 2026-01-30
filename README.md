@@ -1,9 +1,15 @@
 ## New
+  - RDRP XML V0.5 FOR COLOMO
+    일부 보완
+    
   - RDRP XML V0.4 FOR COLOMO
-    CHUNK 기능 추가, 순서 재배치 
+    CHUNK 기능 추가, 순서 재배치
+    
   - RDRP XML V0.3 FOR COLOMO
     GLOSSARY 치환문제 수정
+    
   - RDRP XML V0.2 FOR COLOMO
+    
     ## Attribution
     Certain parts of the AXIOM directives (specifically the INPUT, OUTPUT, and SECTION rules) were adapted by translating the original Kolomo prompt into English for use in this project.  
 All other content is original and released under the MIT License.
