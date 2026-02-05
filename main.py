@@ -7,6 +7,7 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.filechooser import FileChooserListView
 from kivy.uix.screenmanager import ScreenManager, Screen
 
+
 # ---------- 유틸 함수 ----------
 def read_text_with_autodetect(file_path):
     with open(file_path, "rb") as f:
@@ -18,15 +19,16 @@ def read_text_with_autodetect(file_path):
             continue
         try:
             return raw.decode(e)
-        except:
+        except Exception:
             continue
     return raw.decode(enc or "utf-8", errors="ignore")
+
 
 # ---------- 병합 화면 ----------
 class MergeScreen(Screen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        layout = BoxLayout(orientation='vertical')
+        layout = BoxLayout(orientation="vertical")
 
         self.filechooser = FileChooserListView(multiselect=True, filters=["*.txt"])
         layout.add_widget(self.filechooser)
@@ -42,38 +44,45 @@ class MergeScreen(Screen):
         layout.add_widget(merge_btn)
 
         back_btn = Button(text="메인으로")
-        back_btn.bind(on_press=lambda x: self.manager.current = "main")
+        back_btn.bind(on_press=self.go_main)
         layout.add_widget(back_btn)
 
         self.add_widget(layout)
+
+    def go_main(self, *args):
+        self.manager.current = "main"
 
     def merge_files(self, instance):
         files = self.filechooser.selection
         if not files:
             return
+
         try:
             group_size = int(self.group_input.text)
-        except:
+        except ValueError:
             return
+
         output_base = self.output_input.text.strip()
         if not output_base:
             return
 
         for i in range(0, len(files), group_size):
-            group = files[i:i+group_size]
-            output_filename = f"{output_base}_{i//group_size}.txt"
+            group = files[i:i + group_size]
+            output_filename = f"{output_base}_{i // group_size}.txt"
             with open(output_filename, "w", encoding="utf-8") as outfile:
                 for file in group:
                     with open(file, "r", encoding="utf-8", errors="ignore") as infile:
                         outfile.write(infile.read())
                         outfile.write("\n")
+
         print("병합 완료!")
+
 
 # ---------- 분할 화면 ----------
 class SplitScreen(Screen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        layout = BoxLayout(orientation='vertical')
+        layout = BoxLayout(orientation="vertical")
 
         self.filechooser = FileChooserListView(multiselect=False, filters=["*.txt"])
         layout.add_widget(self.filechooser)
@@ -89,15 +98,19 @@ class SplitScreen(Screen):
         layout.add_widget(split_btn)
 
         back_btn = Button(text="메인으로")
-        back_btn.bind(on_press=lambda x: self.manager.current = "main")
+        back_btn.bind(on_press=self.go_main)
         layout.add_widget(back_btn)
 
         self.add_widget(layout)
 
+    def go_main(self, *args):
+        self.manager.current = "main"
+
     def split_file(self, instance):
-        file_path = self.filechooser.selection[0] if self.filechooser.selection else None
-        if not file_path:
+        if not self.filechooser.selection:
             return
+
+        file_path = self.filechooser.selection[0]
         pattern = self.pattern_input.text.strip()
         if not pattern:
             return
@@ -114,31 +127,38 @@ class SplitScreen(Screen):
                 current = part
             else:
                 current += part
+
         if current:
             chapter_texts.append(current)
 
         base_name = self.output_input.text.strip()
-        for idx, chapter in enumerate(chapter_texts, start=0):  # 0번부터 저장
+        for idx, chapter in enumerate(chapter_texts):
             output_filename = f"{base_name}_{idx}.txt"
             with open(output_filename, "w", encoding="utf-8") as outfile:
                 outfile.write(chapter)
+
         print("분할 완료!")
+
 
 # ---------- 메인 화면 ----------
 class MainScreen(Screen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        layout = BoxLayout(orientation='vertical')
+        layout = BoxLayout(orientation="vertical")
 
         merge_btn = Button(text="병합 기능")
-        merge_btn.bind(on_press=lambda x: self.manager.current = "merge")
+        merge_btn.bind(on_press=lambda x: self.go_screen("merge"))
         layout.add_widget(merge_btn)
 
         split_btn = Button(text="분할 기능")
-        split_btn.bind(on_press=lambda x: self.manager.current = "split")
+        split_btn.bind(on_press=lambda x: self.go_screen("split"))
         layout.add_widget(split_btn)
 
         self.add_widget(layout)
+
+    def go_screen(self, name):
+        self.manager.current = name
+
 
 # ---------- 앱 ----------
 class TextToolApp(App):
@@ -148,6 +168,7 @@ class TextToolApp(App):
         sm.add_widget(MergeScreen(name="merge"))
         sm.add_widget(SplitScreen(name="split"))
         return sm
+
 
 if __name__ == "__main__":
     TextToolApp().run()
