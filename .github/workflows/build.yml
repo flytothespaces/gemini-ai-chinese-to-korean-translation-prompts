@@ -10,10 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-    - name: Set up Python 3.10
+    - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: "3.10"
@@ -28,23 +27,24 @@ jobs:
           autoconf libtool pkg-config \
           build-essential
 
-    - name: Install Python dependencies
+    - name: Install Python dependencies (PINNED)
       run: |
         pip install --upgrade pip
-        pip install buildozer cython
+        pip install \
+          buildozer==1.5.0 \
+          python-for-android==2023.09.16 \
+          cython
 
-    # 🔥 중요: 이전 빌드 잔재 완전 제거
     - name: Clean buildozer cache
       run: |
         rm -rf ~/.buildozer
 
-    # 🚀 단 한 번만 실행 (bootstrap + build 동시에)
     - name: Build Android APK
       run: |
         buildozer -v android debug
 
-    - name: Upload APK artifact
+    - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: texttool-apk
+        name: android-apk
         path: bin/*.apk
