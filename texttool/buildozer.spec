@@ -7,13 +7,13 @@ title = TEXT MERGE & SPLITTER BY JS
 package.name = texttool
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.JS
+package.domain = org.js
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas
+source.include_exts = py,txt
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -431,6 +431,14 @@ warn_on_root = 1
 #data/audio/*.wav
 #data/images/original/*
 #
+
+[android]
+# SDK 경로는 GitHub Actions에서 자동 설치되므로 기본값 사용
+android.api = 33
+android.minapi = 21
+android.sdk = 33
+android.ndk = 25b
+android.arch = armeabi-v7a
 
 
 #    -----------------------------------------------------------------------------
