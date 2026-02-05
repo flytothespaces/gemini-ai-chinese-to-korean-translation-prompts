@@ -433,12 +433,12 @@ warn_on_root = 1
 #
 
 [android]
-# SDK 경로는 GitHub Actions에서 자동 설치되므로 기본값 사용
 android.api = 33
 android.minapi = 21
 android.sdk = 33
-android.ndk = 25b
-android.arch = armeabi-v7a
+android.ndk = 25c
+android.arch = arm64-v8a
+android.build_tools_version = 36.1.0
 
 
 #    -----------------------------------------------------------------------------
