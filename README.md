@@ -1,4 +1,7 @@
 ## New
+  - HIMS V0.1 FOR COLOMO
+    한글 프롬프트 추가
+    
   - RDRP XML V0.5 FOR COLOMO
     일부 보완
     
