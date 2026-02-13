@@ -1,4 +1,7 @@
 ## New
+  - HIMS V0.2 FOR COLOMO
+    수정
+
   - HIMS V0.1 FOR COLOMO
     한글 프롬프트 추가
     
