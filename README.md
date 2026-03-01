@@ -1,4 +1,7 @@
 ## New
+  - HIMS V0.4 FOR COLOMO
+    로직 수정
+
   - HIMS V0.3 FOR COLOMO
     로직 수정
     
