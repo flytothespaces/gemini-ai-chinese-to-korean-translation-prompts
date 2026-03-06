@@ -1,4 +1,7 @@
 ## New
+  - HIMS V0.6 LITE FOR COLOMO
+    일부 수정
+
   - HIMS V0.5 LITE FOR COLOMO
     BASIC 간략화
 
