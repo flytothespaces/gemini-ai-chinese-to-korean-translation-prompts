@@ -1,4 +1,7 @@
 ## New
+  - NLT V0.2 FOR COLOMO
+    일부 수정
+
   - NLT V0.1 FOR COLOMO
     가벼운 프롬프트 시작 
 
