@@ -1,5 +1,8 @@
 ## New
   - NLT V0.3 FOR COLOMO
+    일부 수정, [원문_배경] 항목 값을 현대, 고대 입력
+
+  - NLT V0.3 FOR COLOMO
     일부 수정
 
   - NLT V0.2 FOR COLOMO
