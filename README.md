@@ -1,5 +1,8 @@
 ## New
-  - NLT V0.3 FOR COLOMO
+  - NLT V0.5 FOR COLOMO
+    gemini-3-flash-preview 모델에 최적화
+
+  - NLT V0.4 FOR COLOMO
     일부 수정, [원문_배경] 항목 값을 고대 또는 다른 단어  입력. 
     '고대'가 아닌 단어: 병기 최소화, 기존 병기 내용을 문장에 풀어냄.
     고대: 독음 위주로 의미 병기.
