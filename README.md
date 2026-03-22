@@ -1,4 +1,7 @@
 ## New
+  - NLT V0.6 FOR COLOMO
+    일부 수정, [원문_배경] 항목 값을 '고전시대' 설정해서 '고대' 회피하며 병기 최소화
+
   - NLT V0.5 FOR COLOMO
     gemini-3-flash-preview 모델에 최적화
 
